@@ -636,46 +636,51 @@
 // Adicional por kWh: amarela R$ 0,02, vermelha1 R$ 0,04, vermelha2 R$ 0,08.
 // Exiba o total.
 
-let kWh = Number(prompt("Qual seu consumo de kWh?"))
+// let kWh = Number(prompt("Qual seu consumo de kWh?"))
 
-let bandeira = prompt("Qual é a bandeira? (verde, amarela, vermelha1, vermelha2)")
+// let bandeira = prompt("Qual é a bandeira? (verde, amarela, vermelha1, vermelha2)")
 
-let tarifa_base = (0.80 * kWh).toFixed(2)
+// let tarifa_base = (0.80 * kWh).toFixed(2)
 
-    switch (bandeira) {
-        case "amarela":
+//     switch (bandeira) {
+//         case "amarela":
             
-        yellow = kWh * 0.02
+//         yellow = kWh * 0.02
 
-        final = tarifa_base + yellow
+//         final = tarifa_base + yellow
 
-            console.log("O consumo é de R$ " + final)
+//             console.log("O consumo é de R$ " + final)
             
-            break
-        case "vermelha1":
+//             break
+//         case "vermelha1":
             
-        red1 = kWh * 0.04
+//         red1 = kWh * 0.04
 
-        final = tarifa_base + red1
+//         final = tarifa_base + red1
 
-            console.log("O consumo é de R$ " + final)
+//             console.log("O consumo é de R$ " + final)
         
-            break
-        case "vermelha2":
+//             break
+//         case "vermelha2":
             
-        red2 = kWh * 0.08
+//         red2 = kWh * 0.08
 
-        final = tarifa_base + red2
+//         final = tarifa_base + red2
 
-            console.log("O consumo é de R$ " + final)
+//             console.log("O consumo é de R$ " + final)
+            
+//             break
+//             case "verde":
+                
+//             console.log("O consumo é de R$ " + tarifa_base)
 
-            break
-        default:
+//             break
+//         default:
 
-            console.log("Inválido")
+//             console.log("Inválido")
 
-            break
-    }
+//             break
+//     }
 
 //___________________________________________________________________________________________________________________________________
 
@@ -686,6 +691,10 @@ let tarifa_base = (0.80 * kWh).toFixed(2)
 // **20. Agenda de horários.**
 // Exiba todos os horários de atendimento entre 08:00 e 12:00, de 15 em 15 minutos,
 //  no formato `08:15` (com zero à esquerda).
+
+// for (let i = 0800; i <= 1200; i + 0015) {
+//     console.log(i)
+// }
 
 //___________________________________________________________________________________________________________________________________
 
@@ -728,8 +737,105 @@ let tarifa_base = (0.80 * kWh).toFixed(2)
 //___________________________________________________________________________________________________________________________________
 
 // **25. Apuração da eleição do grêmio.**
-// Leia a quantidade de votos e depois cada voto (1, 2 ou 3 para candidatos, 0 para nulo).
-// Exiba o total de cada um, os nulos, o vencedor ou se houve empate.
+// Leia a quantidade de votos 
+// e depois cada voto (1, 2 ou 3 para candidatos, 0 para nulo).
+// Exiba o total de cada um,
+// os nulos, o vencedor ou se houve empate.
+
+// let eleitores = 0
+
+// let Maria = 0
+
+// let Roberto = 0
+
+// let Leandro = 0
+
+// let Nulo = 0
+
+//     while (eleitores < 12) {
+        
+//         let voto = Number(prompt("Insira o seu voto:\nCandidatos\nMaria - 1\nRoberto - 2\nLeandro - 3\nNulo - 0"))        
+
+//         if (voto === 1) {
+            
+//             console.log("Você votou em Maria")
+
+//                 Maria++
+
+//                 eleitores++
+
+//         } else if (voto === 2) {
+            
+//             console.log("Você votou em Roberto")
+
+//                 Roberto++
+
+//                 eleitores++
+
+//         } else if (voto === 3) {
+
+//             console.log("Você votou em Leandro")
+
+//                 Leandro++
+        
+//                 eleitores++
+
+//         } else if (voto === 0) {
+
+//             console.log("Você votou nulo")
+
+//                 Nulo++
+
+//                 eleitores++
+            
+//             } else if (voto != 1 && voto != 2 && voto != 3 && voto != 0) {
+                
+//             console.log("O valor inserido é inválido, tente novamente")
+
+//         }
+
+//     }
+
+//     if (Nulo > Maria && Nulo > Roberto && Nulo > Leandro) {
+        
+//         console.log("TODOS OS VOTOS FORAM NULOS")
+
+//     } else if (Maria > Roberto && Maria > Leandro) {
+        
+//         console.log(`Resultado:\nMaria: ${Maria}\nRoberto: ${Roberto}\nLeandro: ${Leandro}\nNulos: ${Nulo}`)
+//         console.log("Maria venceu")
+        
+//     } else if (Roberto > Maria && Roberto > Leandro) {
+            
+//         console.log(`Resultado:\nMaria: ${Maria}\nRoberto: ${Roberto}\nLeandro: ${Leandro}\nNulos: ${Nulo}`)
+//         console.log("Roberto venceu")
+
+//     } else if (Leandro > Roberto && Leandro > Maria) {
+    
+//         console.log(`Resultado:\nMaria: ${Maria}\nRoberto: ${Roberto}\nLeandro: ${Leandro}\nNulos: ${Nulo}`)
+//         console.log("Leandro venceu")
+
+//     } else if (Maria === Roberto && Roberto > Leandro) {
+            
+//         console.log(`Resultado:\nMaria: ${Maria}\nRoberto: ${Roberto}\nLeandro: ${Leandro}\nNulos: ${Nulo}`)
+//         console.log("Maria e Roberto empataram")
+
+//     } else if (Maria === Leandro && Leandro > Roberto) {
+
+//         console.log(`Resultado:\nMaria: ${Maria}\nRoberto: ${Roberto}\nLeandro: ${Leandro}\nNulos: ${Nulo}`)
+//         console.log("Maria e Leandro empataram")
+
+//     } else if (Roberto === Leandro && Leandro > Maria) {
+            
+//         console.log(`Resultado:\nMaria: ${Maria}\nRoberto: ${Roberto}\nLeandro: ${Leandro}\nNulos: ${Nulo}`)
+//         console.log("Roberto e Leandro empataram")
+
+//     } else if (Maria === Roberto && Roberto === Leandro) {
+
+//         console.log(`Resultado:\nMaria: ${Maria}\nRoberto: ${Roberto}\nLeandro: ${Leandro}\nNulos: ${Nulo}`)
+//         console.log("Todos empataram")
+
+//     }
 
 //___________________________________________________________________________________________________________________________________
 
@@ -751,6 +857,25 @@ let tarifa_base = (0.80 * kWh).toFixed(2)
 // **28. Quando o dinheiro dobra?**
 // Leia o valor investido e a taxa de rendimento mensal.
 // Exiba quantos meses são necessários para o valor dobrar.
+
+let valor_investido = Number(prompt("Qual o valor do investimento? (Exemplo: 731)"))
+
+let taxa_rendimento_mensal = Number(prompt("Qual a taxa do rendimento mensal? (Exemplo: 0.08)"))
+
+let mês = 0
+
+let acumulado = 0
+
+let valor_dobrado = valor_investido * 2
+
+    while (valor_dobrado >= acumulado) {
+
+        rendi = taxa_rendimento_mensal + 1.0
+
+        total_mês = rendi * valor_investido
+
+        acumulado += total_mês
+    }
 
 //___________________________________________________________________________________________________________________________________
 
