@@ -342,58 +342,56 @@
 // Com frequência acima de 90%, a média ganha +0,5 (sem passar de 10).
 // Depois aplique: 6 ou mais aprovado, abaixo disso reprovado.
 
-let nota_one = (Number(prompt("Digite a sua primeira nota (De 0 á 10): "))).toFixed(2)
+// let nota_one = (Number(prompt("Digite a sua primeira nota (De 0 á 10): ")))
 
-let nota_two = (Number(prompt("Digite a sua primeira nota (De 0 á 10): "))).toFixed(2)
+// let nota_two = (Number(prompt("Digite a sua primeira nota (De 0 á 10): ")))
 
-let frequência = parseFloat(prompt("Digite a frequência (Em porcentagem): "))
+// let frequência = parseFloat(prompt("Digite a frequência (Em porcentagem): "))
 
-    let média = (nota_one + nota_two) / 2
+//     let média = (nota_one + nota_two) / 2
 
-    if (frequência < 75) {
+//     if (frequência < 75) {
         
-        console.log("Você foi reprovado")
+//         console.log("Você foi reprovado")
 
-    } else if (frequência >= 75 || frequência <= 89) {
+//     } else if (frequência > 74 && frequência < 90) {
     
-        if (média >= 6.0) {
+//         if (média >= 6.0) {
         
-         console.log("Parabéns, Você passou!")
+//          console.log("Parabéns, Você passou!")
 
-         } else if (média < 6.0) {
+//          } else if (média < 6.0) {
         
-         console.log("Você está reprovado")
+//          console.log("Você está reprovado")
 
-        }
+//         }
 
-    } else if (frequência > 90) {
+//     } else if (frequência >= 90) {
         
-        if (média = 10.0) {
+//         if (média === 10.0) {
             
-            console.log("Parabéns, Você passou!")
+//             console.log("Parabéns, Você passou!")
             
-        } else if (média < 10.0) {
+//         } else if (média < 10.0) {
 
-            let média_final = média + 0.5
+//             let média_final = média + 0.5
 
-            let sobra = média_final - 10.0
+//             let sobra = média_final - 10.0
             
-            let resultado = média_final - sobra
+//             let resultado = média_final - sobra
         
-                if (média_final >= 6.0) {
+//                 if (média_final >= 6.0) {
         
-                 console.log("Parabéns, Você passou!")
+//                  console.log("Parabéns, Você passou!")
 
-                 } else {
+//                  } else {
         
-                 console.log("Você está reprovado")
+//                  console.log("Você está reprovado")
 
-                }
-        }
+//                 }
+//         }
 
-    }
-
-
+//     }
 
 //___________________________________________________________________________________________________________________________________
 
@@ -453,6 +451,82 @@ let frequência = parseFloat(prompt("Digite a frequência (Em porcentagem): "))
 // - Segunda: 1 e 2 | Terça: 3 e 4 | Quarta: 5 e 6 | Quinta: 7 e 8 | Sexta: 9 e 0
 // - Horários restritos: 7h às 10h e 17h às 20h
 
+// let final_placa = prompt("Qual o final da placa do seu carro?")
+
+// let dia_semana = Number(prompt("Qual o dia da semana? (De 0 á 9)"))
+
+// let hora = Number(prompt("Que horas são? (Exemplo: 11)"))
+
+//     switch (dia_semana) {
+
+//         case 1:
+//         case 2:
+//             console.log("Segunda-Feira")
+//             break
+            
+//         case 3:
+//         case 4:
+//             console.log("Terça-Feira")
+//             break
+        
+//         case 5:
+//         case 6:
+//             console.log("Quarta-Feira")
+//             break
+
+//         case 7:
+//         case 8:
+//             console.log("Quinta-Feira")
+//             break
+
+//         case 9:
+//         case 0:
+//             console.log("Sexta-Feira")
+//             break
+    
+//         default:
+//             console.log("Dia inválido (ou fim de semana)")
+//             break
+            
+//     }
+
+//     switch (hora) {
+
+//         case 7:
+//         case 8:
+//         case 9:
+//         case 10:
+//         case 17:
+//         case 18:
+//         case 19:
+//         case 20:
+//             console.log("Está detro dos horários estritos")
+//             break 
+            
+//             default:
+//             console.log("Está fora dos horários estritos")
+//             break
+            
+//     }
+
+//         if (dia_semana >= 0 && dia_semana <= 9) {
+         
+//             if (hora >= 7 && hora <= 10 || hora >= 17 && hora <= 20) {
+
+//                 console.log("O carro pode circular")
+                
+//             } else {
+                
+//                 console.log("O carro não pode circular")
+
+//             }
+
+//         } else {
+
+//             console.log("O carro não pode circular")
+            
+//         }
+
 //___________________________________________________________________________________________________________________________________
 
 // **16. Status HTTP.**
@@ -471,12 +545,88 @@ let frequência = parseFloat(prompt("Digite a frequência (Em porcentagem): "))
 // Exiba o status e se o pedido ainda pode ser cancelado (só em `P` e `A`).
 //  Use cases agrupados.
 
+// let estatus = prompt("Qual a letra de entrega do seu Delivery? (P,A,S,E,C)")
+
+//     switch (estatus) {
+//         case "P":
+//             console.log("Pendente")
+//             break
+//         case "A":
+//             console.log("Aceito")
+//             break
+//         case "S":
+//             console.log("Saiu para entrega")
+//             break
+//         case "E":
+//             console.log("Entregue")
+//             break
+//         case "C":
+//             console.log("Cancelado")
+//             break
+//         default:
+//             console.log("Status inválido")
+//             break
+//     }
+
+//     switch (estatus) {
+//         case "P":
+//         case "A":
+//             console.log("Ainda pode ser cancelado")
+//             break
+    
+//         case "S":
+//         case "E":
+//         case "C":
+//             console.log("Não pode mais ser cancelado")
+//             break
+
+//         default:
+//             console.log("Inválido")
+//             break
+//     }
+
 //___________________________________________________________________________________________________________________________________
 
 // **18. Casa de câmbio.**
 // Leia um valor em reais e o código da moeda (`USD`, `EUR`, `ARS`, `JPY`).
 // Use cotações fixas e cobre 2% de taxa.
 // Exiba quanto a pessoa recebe.
+
+// let valor_reais = Number(prompt("Qual o valor (em reais)?")).toFixed(2)
+
+// let code_coin = prompt("Qual o código da moeda (USD, EUR, ARS, JPY)?")
+
+// let USD = 5.93
+
+// let EUR = 6.51
+
+// let ARS = 0.03
+
+// let JPY = 0.34
+
+
+//     switch (code_coin) {
+//         case "USD":
+            
+//             break
+//         case "EUR":
+            
+//             break
+//         case "ARS":
+            
+//             break
+//         case "JPY":
+            
+//             break
+    
+//         default:
+
+//             console.log("Inválido")
+
+//             break
+    
+//     }
+
 
 //___________________________________________________________________________________________________________________________________
 
@@ -485,6 +635,47 @@ let frequência = parseFloat(prompt("Digite a frequência (Em porcentagem): "))
 // Tarifa base: R$ 0,80/kWh.
 // Adicional por kWh: amarela R$ 0,02, vermelha1 R$ 0,04, vermelha2 R$ 0,08.
 // Exiba o total.
+
+let kWh = Number(prompt("Qual seu consumo de kWh?"))
+
+let bandeira = prompt("Qual é a bandeira? (verde, amarela, vermelha1, vermelha2)")
+
+let tarifa_base = (0.80 * kWh).toFixed(2)
+
+    switch (bandeira) {
+        case "amarela":
+            
+        yellow = kWh * 0.02
+
+        final = tarifa_base + yellow
+
+            console.log("O consumo é de R$ " + final)
+            
+            break
+        case "vermelha1":
+            
+        red1 = kWh * 0.04
+
+        final = tarifa_base + red1
+
+            console.log("O consumo é de R$ " + final)
+        
+            break
+        case "vermelha2":
+            
+        red2 = kWh * 0.08
+
+        final = tarifa_base + red2
+
+            console.log("O consumo é de R$ " + final)
+
+            break
+        default:
+
+            console.log("Inválido")
+
+            break
+    }
 
 //___________________________________________________________________________________________________________________________________
 
