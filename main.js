@@ -844,6 +844,51 @@
 // Exiba a quantidade de itens, o item mais caro e o total.
 // Acima de R$ 300, aplique 10% de desconto.
 
+let total = 0.0
+
+let quantidade = 0
+
+let maior_valor = 0.0
+
+let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
+
+    while (caixa != "fim") {
+        
+        let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
+
+        if (caixa != String && caixa != NaN) {
+            
+            let entrada = (caixa).toFixed(2)
+
+            total += entrada 
+
+            quantidade++
+
+            if (maior_valor === 0) {
+
+                maior_valor += entrada
+
+            } else if (maior_valor > entrada) {
+
+                // não muda nada
+
+            } else if (maior_valor < entrada) {
+
+            troca = maior_valor * 0
+
+                maior_valor = entrada + troca
+
+            }
+
+        } else {
+
+            console.log("Valor inserido ou caractere inválido\nTente novamenre")
+
+        }
+    }
+
+        console.log(`Resultados:\nTotal: ${total}\nQuantidade: ${quantidade}\nMaior valor: ${maior_valor}`)
+
 //___________________________________________________________________________________________________________________________________
 
 // **27. Bateria do celular.**
@@ -858,34 +903,56 @@
 // Leia o valor investido e a taxa de rendimento mensal.
 // Exiba quantos meses são necessários para o valor dobrar.
 
-let valor_investido = Number(prompt("Qual o valor do investimento? (Exemplo: 731)"))
+// let valor_investido = Number(prompt("Qual o valor do investimento? (Exemplo: 731)"))
 
-let taxa_rendimento_mensal = Number(prompt("Qual a taxa do rendimento mensal? (Exemplo: 0.08)"))
+// let taxa_rendimento_mensal = Number(prompt("Qual a taxa do rendimento mensal? (Exemplo: 0.08)"))
 
-let mês = 0
+// let mês = 0
 
-let acumulado = 0
+// let acumulado = 0
 
-let valor_dobrado = valor_investido * 2
+// let valor_dobrado = (valor_investido * 2)
 
-    while (valor_dobrado >= acumulado) {
+//     while (valor_dobrado >= acumulado) {
 
-        rendi = taxa_rendimento_mensal + 1.0
+//         rendi = taxa_rendimento_mensal + 1.0
 
-        total_mês = rendi * valor_investido
+//         total_mês = rendi * valor_investido
 
-        acumulado += total_mês
-    }
+//         acumulado += (total_mês).
+
+//         mês++
+//     }
+
+//     console.log(`O valor do investimento será dobrado em ${mês} mesês`)
 
 //___________________________________________________________________________________________________________________________________
 
 // **29. O computador adivinha.**
 // O usuário pensa em um número de 1 a 100.
-// O programa chuta e o usuário responde `maior`,
-// `menor` ou `acertou`.
+// O programa chuta e o usuário responde `maior`,`menor` ou `acertou`.
 // O programa deve sempre chutar o meio do intervalo restante.
 // Exiba em quantas tentativas acertou.
 
+
+
+// let número = Number(prompt("Pense em um número de 1 a 100\n(Depois clique em ok, e o computador vai tentar adivinhar seu número)"))
+
+// let num_aleatório = Math.floor(Math.random() * 100)
+
+//     while (acertou = false) {
+
+//         let tentativa = (`Seu número é... ${num_aleatório}!\n(maior, menor ou certo)`)
+
+//         if (tentativa === "maior") {
+
+//         } else if (tentativa === "menor") {
+
+//         } else if (tentativa === "certo") {
+
+//         }
+
+//     }
 //___________________________________________________________________________________________________________________________________
 
 // **30. Desafio integrador: máquina de snacks.**
@@ -906,3 +973,21 @@ let valor_dobrado = valor_investido * 2
 
 //___________________________________________________________________________________________________________________________________
 
+
+
+
+
+
+
+
+
+
+
+// 4
+// 12
+// 16
+// 18-
+// 19-
+// Os de for-
+// 28-
+// 29-
