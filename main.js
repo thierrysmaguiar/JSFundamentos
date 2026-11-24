@@ -844,50 +844,50 @@
 // Exiba a quantidade de itens, o item mais caro e o total.
 // Acima de R$ 300, aplique 10% de desconto.
 
-let total = 0.0
+// let total = 0.0
 
-let quantidade = 0
+// let quantidade = 0
 
-let maior_valor = 0.0
+// let maior_valor = 0.0
 
-let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
+// let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
 
-    while (caixa != "fim") {
+//     while (caixa != "fim") {
         
-        let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
+//         let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
 
-        if (caixa != String && caixa != NaN) {
+//         if (caixa != String && caixa != NaN) {
             
-            let entrada = (caixa).toFixed(2)
+//             let entrada = (caixa).toFixed(2)
 
-            total += entrada 
+//             total += entrada 
 
-            quantidade++
+//             quantidade++
 
-            if (maior_valor === 0) {
+//             if (maior_valor === 0) {
 
-                maior_valor += entrada
+//                 maior_valor += entrada
 
-            } else if (maior_valor > entrada) {
+//             } else if (maior_valor > entrada) {
 
-                // não muda nada
+//                 // não muda nada
 
-            } else if (maior_valor < entrada) {
+//             } else if (maior_valor < entrada) {
 
-            troca = maior_valor * 0
+//             troca = maior_valor * 0
 
-                maior_valor = entrada + troca
+//                 maior_valor = entrada + troca
 
-            }
+//             }
 
-        } else {
+//         } else {
 
-            console.log("Valor inserido ou caractere inválido\nTente novamenre")
+//             console.log("Valor inserido ou caractere inválido\nTente novamenre")
 
-        }
-    }
+//         }
+//     }
 
-        console.log(`Resultados:\nTotal: ${total}\nQuantidade: ${quantidade}\nMaior valor: ${maior_valor}`)
+//         console.log(`Resultados:\nTotal: ${total}\nQuantidade: ${quantidade}\nMaior valor: ${maior_valor}`)
 
 //___________________________________________________________________________________________________________________________________
 
@@ -896,6 +896,73 @@ let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
 // Leia quanto ela gasta por hora.
 // Simule hora a hora: ao chegar em 15%, entra o modo economia e o consumo cai pela metade.
 // Exiba em que hora o modo economia ligou e em quantas horas a bateria acabou.
+
+// let bateria_hora = Number(prompt("A bateria começa em 100%\nQuanto de bateria é gasto por hora?"))
+
+// let hora = 0
+
+// let bateria_atual = 0
+
+// let hora_bateria_economico = 0
+
+// let hora_bateria_acabou = 0
+
+//     while () {
+
+//         if (hora === 0) {
+            
+//             let consumo = 100 - bateria_hora
+    
+//             bateria_atual += consumo
+            
+//             hora++
+            
+//         } else if (hora > 0 && bateria > 15) {
+            
+//             let consumo = bateria_atual - bateria_hora
+            
+//             bateria_atual = bateria_atual * 0
+            
+//             bateria_atual += consumo
+
+//             hora++
+            
+//         } else if (hora > 0 && bateria <= 15) {
+
+//             let metade = bateria_hora / 2
+
+//             let consumo = bateria_atual - metade
+
+//             bateria_atual = bateria_atual * 0
+
+//             bateria_atual += consumo
+
+//             hora++
+
+//             hora_bateria_economico = hora
+
+//         } else if (bateria < 15 && bateria >= 0) {
+
+//             let metade = bateria_hora / 2
+
+//             let consumo = bateria_atual - metade
+
+//             bateria_atual = bateria_atual * 0
+
+//             bateria_atual += consumo
+
+
+//         } else if (bateria === 0) {
+
+//             hora++
+
+//             hora_bateria_acabou = hora
+
+//             console.log(`Hora que foi ativada a economia de bateria ${hora_bateria_economico}\nHora que a bateria acabou ${hora_bateria_acabou}`)
+
+//         }
+            
+//     }
 
 //___________________________________________________________________________________________________________________________________
 
@@ -989,5 +1056,6 @@ let caixa = parseFloat(prompt("Qual o preço do produto? (preço ou fim)"))
 // 18-
 // 19-
 // Os de for-
+// 27-
 // 28-
 // 29-
